@@ -72,25 +72,6 @@ Lab5-Rent-An-Apartment/
 
 ---
 
-## How to Run the Project
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd Lab5-Rent-An-Apartment
-   ```
-
-2. Build the project using Maven:
-   ```bash
-   mvn clean install
-   ```
-
-3. Run the application (if `App.java` is implemented):
-   ```bash
-   mvn exec:java -Dexec.mainClass="com.company.apartmentmanagement.App"
-   ```
-
-4. Run the tests:
-   ```bash
    mvn test
    ```
