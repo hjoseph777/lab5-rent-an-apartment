@@ -1,4 +1,6 @@
-# Lab5-Rent-An-Apartment
+## Lab5-Rent-An-Apartment [<sup>[view code](#code-section)</sup>](#file-directory-descriptions)
+
+
 
 ## Project Synopsis
 The `Lab5-Rent-An-Apartment` project is a Java-based application designed to help manage tenant information and rent schedules in an apartment building. The project includes functionality for calculating rent based on the floor number, formatting tenant names, and leveraging utility methods for string manipulation. It aims to demonstrate object-oriented programming principles such as encapsulation, aggregation, and method overriding.
@@ -68,7 +70,7 @@ Lab5-Rent-An-Apartment/
 
 ---
 
-### File/Directory Descriptions
+## <a id="code-section"></a>File/Directory Descriptions
 
 1. **`src/main/java/com/company/`**  
    - Contains the main source code for the project:
