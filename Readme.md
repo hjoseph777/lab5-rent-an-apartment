@@ -12,6 +12,26 @@ The `Lab5-Rent-An-Apartment` project is a Java-based application designed to hel
 
 ---
 
+## Application Output
+Below is a sample screenshot showing the application in action:
+
+![Apartment Rent Calculator Output](ScreenResult.png)
+
+The screenshot demonstrates:
+- Input validation for tenant name (letters and spaces only)
+- Automatic name capitalization (e.g., "john doe" → "John Doe")
+- Floor number validation (must be 1-5)
+- Rent calculation based on floor number:
+  - Floor 1: $500/month
+  - Floor 2: $650/month
+  - Floor 3: $800/month
+  - Floor 4: $950/month
+  - Floor 5: $1100/month
+- Formatted output display with tenant details
+- Current tenant list with all active rentals
+
+---
+
 ## Ideal File and Directory Structure
 
 Below is the recommended file and directory structure for the project:
@@ -50,52 +70,18 @@ Lab5-Rent-An-Apartment/
 
 ### File/Directory Descriptions
 
-1. **`src/main/java/com/company/apartmentmanagement/`**  
+1. **`src/main/java/com/company/`**  
    - Contains the main source code for the project:
      - [`Rent.java`](src/main/java/com/company/Rent.java): Manages rent schedules and tenant aggregation.
      - [`Tenant.java`](src/main/java/com/company/Tenant.java): Represents a tenant with attributes like name and floor number.
      - [`StringUtility.java`](src/main/java/com/company/StringUtility.java): Provides utility methods for string manipulation.
      - [`ValidationUtility.java`](src/main/java/com/company/ValidationUtility.java): Provides utility methods for validating user inputs.
-     - [`App.java`](src/main/java/com/company/App.java): The main entry point for the application (optional, depending on project design).
+     - [`App.java`](src/main/java/com/company/App.java): The main entry point for the application.
 
-2. **`src/main/resources/`**  
-   - Stores configuration files or resources needed by the application.
-   - Example: `application.properties` (if configuration is required).
-
-3. **`src/test/java/com/company/apartmentmanagement/`**  
+2. **`src/test/java/com/company/`**  
    - Contains unit tests for the project:
-     - `RentTest.java`: Tests the functionality of the `Rent`, `Tenant`, and `StringUtility` classes.
+     - [`RentTest.java`](src/test/java/com/company/RentTest.java): Tests rent calculation and tenant management.
+     - [`TenantTest.java`](src/test/java/com/company/TenantTest.java): Tests tenant attributes and methods.
+     - [`StringUtilityTest.java`](src/test/java/com/company/StringUtilityTest.java): Tests string manipulation utilities.
 
-4. **`pom.xml`**  
-   - The Maven configuration file that manages dependencies and build instructions.
 
-5. **`README.md`**  
-   - Provides an overview of the project, including its purpose, features, and setup instructions.
-
-6. **`.gitignore`**  
-   - Specifies files and directories to be ignored by Git (e.g., `target/`, `.idea/`, etc.).
-
----
-
-## How to Run the Project
-
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd Lab5-Rent-An-Apartment
-   ```
-
-2. Build the project using Maven:
-   ```bash
-   mvn clean install
-   ```
-
-3. Run the application (if `App.java` is implemented):
-   ```bash
-   mvn exec:java -Dexec.mainClass="com.company.apartmentmanagement.App"
-   ```
-
-4. Run the tests:
-   ```bash
-   mvn test
-   ```
